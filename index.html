@@ -4,16 +4,133 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
-
+  <title>Countries</title>
+  
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+  
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!-- SITE-HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <div class="sitenav">
+        <h2 class="sitenav-title">Where in the world?</h2>
+        <a class="dark-mode" href="#"><img class="dark-mode-img" src="img/Path.svg" alt="Moon img" width="15" height="14">Dark Mode</a>
+      </div>
+    </div>
+  </header>
+  
+  
+  <!-- MAIN-CONTENT -->
+  <main class="main-content">
+    <div class="container">
+      <!-- GLOBAL-SEARCH -->
+      <div class="search-department">
+        <div class="search">
+          <input class="search-input" type="search" name="search" placeholder="Search for a country…" aria-label="Search for a country…" required>
+        </div>
+        <div class="filter">
+          <select class="filter-select" name="select-region">
+            <option value="region" selected disabled>Filter by Region</option>
+            <option value="region">Africa</option>
+            <option value="region">America</option>
+            <option value="region">Asia</option>
+            <option value="region">Europe</option>
+            <option value="region">Oceania</option>
+          </select>
+        </div>
+      </div>
 
 
-
+      <!-- INDEX-COLLECTION -->
+      <div class="index-collection">
+        <div class="index-list">
+          <div class="index-item">
+            <img class="index-item-img" src="img/flag-germany.svg" alt="Flag Germany" width="267" height="160">
+            <div class="index-info-wrapper">
+              <h2 class="index-item-title">Germany</h2>
+              <h3 class="index-item-population">Population: 81,770,900</h3>
+              <h3 class="index-item-region">Region: Europe</h3>
+              <h3 class="index-item-capital">Capital: Berlin</h3>
+            </div>
+          </div>
+          <div class="index-item">
+            <img class="index-item-img" src="img/flag-usa.svg" alt="USA Flag" width="267" height="160">
+            <div class="index-info-wrapper">
+              <h2 class="index-item-title">United States of America</h2>
+              <h3 class="index-item-population">Population: 323,947,000</h3>
+              <h3 class="index-item-region">Region: Americas</h3>
+              <h3 class="index-item-capital">Capital: Washington, D.C.</h3>
+            </div>
+          </div>
+          <div class="index-item">
+            <img class="index-item-img" src="img/Brazil.svg.svg" alt="Brazil Falg" width="267" height="160">
+            <div class="index-info-wrapper">
+              <h2 class="index-item-title">Brazil</h2>
+              <h3 class="index-item-population">Population: 206,135,893</h3>
+              <h3 class="index-item-region">Region: Americas</h3>
+              <h3 class="index-item-capital">Capital: Brasília</h3>
+            </div>
+          </div>
+          <div class="index-item">
+            <img class="index-item-img" src="img/Iceland.svg.svg" alt="Iceland Flag" width="267" height="160">
+            <div class="index-info-wrapper">
+              <h2 class="index-item-title">Iceland</h2>
+              <h3 class="index-item-population">Population: 334,300</h3>
+              <h3 class="index-item-region">Region: Europe</h3>
+              <h3 class="index-item-capital">Capital: Reykjavík</h3>
+            </div>
+          </div>
+          <div class="index-item">
+            <img class="index-item-img" src="img/Afghaniston.svg.svg" alt="Afghanistan Falg" width="267" height="160">
+            <div class="index-info-wrapper">
+              <h2 class="index-item-title">Afghanistan</h2>
+              <h3 class="index-item-population">Population: 27,657,145</h3>
+              <h3 class="index-item-region">Region: Asia</h3>
+              <h3 class="index-item-capital">Capital: Kabul</h3>
+            </div>
+          </div>
+          <div class="index-item">
+            <img class="index-item-img" src="img/Islands.svg.svg" alt="Islands Falg" width="267" height="160">
+            <div class="index-info-wrapper">
+              <h2 class="index-item-title">Åland Islands</h2>
+              <h3 class="index-item-population">Population: 28,875</h3>
+              <h3 class="index-item-region">Region: Europe</h3>
+              <h3 class="index-item-capital">Capital: Mariehamn</h3>
+            </div>
+          </div>
+          <div class="index-item">
+            <img class="index-item-img" src="img/Albania.svg.svg" alt="Albania Flag" width="267" height="160">
+            <div class="index-info-wrapper">
+              <h2 class="index-item-title">Albania</h2>
+              <h3 class="index-item-population">Population: 2,886,026</h3>
+              <h3 class="index-item-region">Region: Europe</h3>
+              <h3 class="index-item-capital">Capital: Tirana</h3>
+            </div>
+          </div>
+          <div class="index-item">
+            <img class="index-item-img" src="img/Algeria.svg.svg" alt="Algeria Flag" width="267" height="160">
+            <div class="index-info-wrapper">
+              <h2 class="index-item-title">Algeria</h2>
+              <h3 class="index-item-population">Population: 40,400,000</h3>
+              <h3 class="index-item-region">Region: Africa</h3>
+              <h3 class="index-item-capital">Capital: Algiers</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  
+  
+  
   <script src="js/main.js"></script>
 </body>
 </html>
