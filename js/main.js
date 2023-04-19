@@ -1,9 +1,5 @@
-const elDarkModeButton = document.querySelector('.dark-mode-button');
-const elLightModeButton = document.querySelector('.dark-mode-button');
+const elSiteThemeToggler = document.querySelector('.site-header-theme-toggler');
 
-elDarkModeButton.addEventListener('click', function() {
-    document.body.classList.add('dark-mode');
-})
-elLightModeButton.addEventListener('mouseenter', function() {
-    document.body.classList.remove('dark-mode');
+elSiteThemeToggler.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
 })
