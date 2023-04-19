@@ -20,7 +20,7 @@
   <header class="site-header">
     <div class="site-header-container container">
       <a class="site-header-logo" href="index-html">Where in the world?</a>
-      
+
       <button class="site-header-theme-toggler" type="button">
         <span class="site-header-theme-toggler-inner">
           <svg class="site-header-theme-icon" width="20" height="20" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
@@ -36,25 +36,20 @@
   <!-- MAIN-CONTENT -->
   <main class="main-content">
     <div class="container">
-      <!-- GLOBAL-SEARCH -->
-      <div class="search-department">
-        <div class="search">
-          <input class="search-input" type="search" name="search" placeholder="Search for a country…" aria-label="Search for a country…" required>
-        </div>
-        <div class="filter">
-          <select class="filter-select" name="select-region">
-            <option value="region" selected disabled>Filter by Region</option>
-            <option value="region">Africa</option>
-            <option value="region">America</option>
-            <option value="region">Asia</option>
-            <option value="region">Europe</option>
-            <option value="region">Oceania</option>
-          </select>
-        </div>
-      </div>
+      <form class="filters" action="https://echo.htmlacademy.ru" method="get">
+        <input class="filters-search-input" type="search" name="search" placeholder="Search for a country…" aria-label="Country name" required>
+        <select class="filters-region-select" name="region" aria-label="Regions">
+          <option selected disabled>Filter by Region</option>
+          <option>Africa</option>
+          <option>America</option>
+          <option>Asia</option>
+          <option>Europe</option>
+          <option>Oceania</option>
+        </select>
+      </form>
 
-
-      <!-- INDEX-COLLECTION -->
+                                
+      <!-- INDEX-COLLECTION
       <div class="index-collection">
         <div class="index-list">
           <div class="index-item">
@@ -130,7 +125,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </main>
   
